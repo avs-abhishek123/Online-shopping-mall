@@ -1,0 +1,280 @@
+
+<html>
+<head>
+<title> Sign up</title>
+<script>
+function validate_signupform()
+{	
+    var flag=0;
+	var n=document.getElementById('name').value;
+	var name_pat=/^[A-Z]{1}[a-z]+\s[A-Z]{1}[a-z]+$/;
+    if(!(name_pat.test(n)))
+    {
+	    alert( "Enter the valid name.Ex:Thasneem S" );
+	    flag=1;
+	}
+	
+	var m=document.getElementById('mail').value;
+	var mail_pat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+	if(!(mail_pat.test(m)))
+	{
+	  alert("Enter the valid Email Id.Ex:thasriya@gmail.com");
+	  flag=1;
+	}
+	
+	var mn=document.getElementById('mobile_number').value;
+	var mobileno_pat=/^[0-9]{10}$/;
+	if(!(mobileno_pat.test(mn)))
+	{
+	   alert("Enter the valid phone number.Ex:9585927826");
+	   flag=1;
+	}
+	
+	var p=document.getElementById('password').value;
+	var pass_pat=/^[A-Za-z0-9]+$/;
+	if(!(pass_pat.test(p)))
+	{
+	   alert("Enter the valid password.Password have only strings and number");
+	   flag=1;
+	}
+	var p1=document.getElementById('password').value;
+    var p2=document.getElementById('password2').value;
+	if(p1!=p2){
+	  alert("Password not same")
+	  flag=1;
+	}
+	if(flag==0){
+	document.getElementById('subb').submit();
+	}
+}
+</script>
+<style type="text/css">
+#tfnewsearch{
+	padding:2%;
+	margin-left:10%;
+	}
+ 
+ .tftextinput{
+        width:40%;
+		margin-left:5%;
+		padding: 1.2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:90%;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.2vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover{
+	border:1px solid  #aed6f1 ;
+	color:yellow;
+	}
+	#sch{
+	padding: 1.2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.0vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	#sch:hover{
+	border:1px solid yellow;
+	}
+	button:hover{
+	border:1px solid yellow;
+	}
+	button:hover{
+	border:1px solid yellow;
+	}
+  button{
+   background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+   border: solid 1px #0076a3;
+   cursor:pointer;
+   color:white;
+   border-radius: 5px 5px;
+   font-size:1vw;
+ height:32.5%;
+   width:8%
+  }
+.th{
+	  width:400px;
+	  cursor:pointer;
+	  color:white;
+	  text-align:center;
+	  font-size:110%;
+	}
+	th:hover{
+	  background-color:white;
+	  color:black;
+	  text-shadow:none;
+	}
+	a{
+	 text-decoration:none;
+	 color:white;
+	}
+	a:hover{
+	   color:black;
+	}
+	#footer{
+	  font-family:cursive;
+	  font-size:95%;
+	}
+body {
+	background-color:#98d4f3;
+	color: #0D304E;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	}
+
+a { 
+	text-decoration: none; 
+  }
+h1{
+    font-size: 139%;
+   font-weight:bolder;
+   text-align:center;
+   background-color:red;
+   color:yellow;
+ 
+  }
+h1, p {
+	margin-bottom: 3%;
+	}
+strong {
+	font-weight: bold;
+	}
+.uppercase { text-transform: uppercase; }
+
+#login {
+	margin: 5% auto;
+	width: 40%;
+	margin-top:1%;
+	}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #ffffff;
+border:none;
+border-radius: 3%;
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size:100%;
+height: 50px;
+outline: none;
+padding: 3%;
+width: 98%;
+}
+form fieldset input[type="button"] {
+background-color: #008dde;
+border: none;
+border-radius: 3%;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 98%;
+}
+
+form fieldset a {
+color: dark #5a5656;
+font-size: 100%;
+}
+form fieldset a:hover {
+ text-decoration: underline; 
+ }
+ .x1{
+color:black;
+font-size:120%;
+font-weight:bolder;
+text-shadow:2px 2px yellow;
+}
+ </style>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	     var newLine="\r\n";
+	     var message="Enter the name like 'Thaneem S'";
+		   message+=newLine;
+		   message+="Enter the mail like 'thasriya@gmail.com'";
+		   message+=newLine;
+		   message+="Enter the mobile number like '9585927826'";
+		   message+=newLine;
+		   message+="No special characters are allowed,only strings and numbers";
+	  $(document).ready(function(){
+	    $(".jq2").focus(function(){
+		  $(this).css("background-color","#e5e5e5");
+		});
+		 $(".jq2").blur(function(){
+            $(this).css("background-color", "#ffffff");
+         });
+		 $("#name").click(function(){
+		   alert(message);
+		 });
+	  });
+	</script>
+	<div style="float:left;width:25%;height:23%;background-color:brown;overflow:hidden;margin-top:-1%">
+    <img src="Image/logo1.jpeg" style="height:100%;width:100%"></img>
+</div>
+    
+<div style="width:100%;height:20%;background-color:#0D304E;color:white;margin-top:-1%">
+   <br>
+     <form id="tfnewsearch" method="get" name="searchfield">
+		<input type="text"  placeholder="Search Products here" class="tftextinput" name="q" size="21" maxlength="120%"><input type="submit" id="sch" value="SEARCH" class="tfbutton">
+	 </form>
+ <button type="button" class="btn btn-primary" style="margin-top:-7.5%;margin-left:81%;" onClick="location.href='sign in.html'">SIGN IN</button>
+	<button type="button" class="btn btn-primary" style="margin-top:-7.5%;margin-left:90%;" onClick="location.href='sign up.html'">SIGN UP</button></button>
+</div>
+<div style="100%;height:3.5%;background-color:#0D304E;color:white">
+<table>
+   <tr style="margin-left:10%">
+    <th class="th" id="d1"><a href="intex.html">Home</a></th>
+    <th class="th" id="d2"><a href="about2.html">About us</a></th>
+    <th class="th" id="d3"><a href="1st page.html">Purchase</a></th>
+    <th class="th" id="d4"><a href="contact2.html">Contact us</a></th>
+   </tr>
+</table>
+</div>
+	<div id="login">
+		<h1>Welcome to Magic Shopping.Sign up</h1>
+	 	
+        <form action="1st page.html" method="POST">
+	<fieldset style="border-color:#5dade2">
+	<p class="x1"> Name<input type="text" id="name"  name="cname" class="jq2"></p>
+	<p class="x1"> Email address<input type="text" id="mail" name="cmail" class="jq2"></p>
+	<p class="x1"> Phone number<input type="text" id="mobile_number" name="cnumber" class="jq2"></p>
+    <p class="x1"> Password<input type="password" id="password" name="cpassword" class="jq2"></p>
+	<p class="x1"> Confirm password <input type="password" id="password2" class="jq2"></p>
+	<a href="1st page2.html"><p><input type="button" value="Login" onclick="validate_signupform()"></p></a>
+	</fieldset>
+		</form>
+		</div>
+	<div style="width:100%;height:11%;background-color:#0D304E;overflow:hidden">
+<a href="intex.html" id="footer">Home</a><br>
+<a href="about2.html" id="footer">About us</a><br>
+<a href="contact2.html" style="margin-top:-20%;" id="footer">Contact us</a>
+
+    <p style="margin-top:-5%;text-align:center;color:white" id="footer">Star Textiles, Vellore - 632014, Tamil Nadu, India.</p>
+	<p style="margin-top:-3%;text-align:center;color:white" id="footer">Thank you for visiting our page</p>
+
+</div>
+</body>
+</html>

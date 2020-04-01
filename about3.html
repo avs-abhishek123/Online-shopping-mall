@@ -1,0 +1,245 @@
+
+<html>
+<head>
+<style>
+body, html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Sniglet', cursive;
+}
+#h1{
+	font-weight: normal;
+	font-size: 4em;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 500px;
+	color: #F90;
+	text-align: center;
+
+}
+
+/* Animation webkit */
+@-webkit-keyframes myfirst
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+/* Animation */
+@keyframes myfirst
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	background-image: url('image/fish.png');
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: myfirst 24s;
+	-webkit-animation: myfirst 24s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+#fish{
+	top: 120px;
+}
+
+#fish2{
+	top: 260px;
+	animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+}
+
+
+header{
+	height: 160px;
+	background: url('image/golf.png') repeat-x bottom;
+}
+
+
+.th{
+	  width:400px;
+	  cursor:pointer;
+	  color:white;
+	  text-align:center;
+	  font-family:arial;
+	  font-size:110%;
+	}
+	th:hover{
+	  background-color:white;
+	  color:black;
+	  text-shadow:none;
+	}
+	a{
+	 text-decoration:none;
+	 color:white;
+	}
+	a:hover{
+	   color:black;
+	}
+	button:hover{
+	border:1px solid yellow;
+	}
+  button{
+   background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+   border: solid 1px #0076a3;
+   cursor:pointer;
+   color:white;
+   border-radius: 5px 5px;
+   font-size:1vw;
+   height:30%;
+   width:8%
+  }
+  
+  #tfnewsearch{
+	padding:2%;
+	margin-left:10%;
+	}
+ 
+ .tftextinput{
+        width:40%;
+		margin-left:5%;
+		padding: 1.2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:90%;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.2vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover{
+	border:1px solid  #aed6f1 ;
+	color:yellow;
+	}
+	#sch{
+	padding: 1.2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.0vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	#sch:hover{
+	border:1px solid yellow;
+	}
+	button:hover{
+	border:1px solid yellow;
+	}
+	button:hover{
+	border:1px solid yellow;
+	}
+  button{
+   background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+   border: solid 1px #0076a3;
+   cursor:pointer;
+   color:white;
+   border-radius: 5px 5px;
+   font-size:1vw;
+ height:32.5%;
+   width:8%
+  }
+.th{
+	  width:400px;
+	  cursor:pointer;
+	  color:white;
+	  text-align:center;
+	  font-size:110%;
+	}
+	th:hover{
+	  background-color:white;
+	  color:black;
+	  text-shadow:none;
+	}
+	a{
+	 text-decoration:none;
+	 color:white;
+	}
+	a:hover{
+	   color:black;
+	}
+	#footer{
+	  font-family:cursive;
+	  font-size:95%;
+	}
+	p{
+	  text-align:center;
+	}
+ </style>
+</head>
+<body>
+
+	<div style="float:left;width:25%;height:23%;background-color:brown;overflow:hidden;margin-top:-1%">
+    <img src="Image/logo1.jpeg" style="height:100%;width:100%"></img>
+</div>
+    
+<div style="width:100%;height:20%;background-color:#0D304E;color:white;margin-top:-1%">
+   <br>
+     <form id="tfnewsearch" method="get">
+		<input type="text"  placeholder="Search Products here" class="tftextinput" name="q" size="21" maxlength="120%"><input type="submit" id="sch" value="SEARCH" class="tfbutton">
+	 </form>
+     <a href="intex.html"> <button type="button" class="btn btn-primary" style="margin-top:-8.5%;margin-left:86%;" onClick="location.href='sign in.html'">LOG OUT</button></a>
+</div>
+<div style="100%;height:3.5%;background-color:#0D304E;color:white">
+<table>
+   <tr style="margin-left:10%">
+    <th class="th" id="d1"><a href="intex2.html">Home</a></th>
+    <th class="th" id="d2"><a href="about3.html">About us</a></th>
+    <th class="th" id="d3"><a href="1st page2.html">Purchase</a></th>
+    <th class="th" id="d4"><a href="contact3.html">Contact us</a></th>
+   </tr>
+</table>
+</div>
+<header>
+	<h1 id="h1">About us</h1>
+</header>
+<div style="background-color:#98d4f3;height:45%;width:100%;margin-top:-1.5%">
+   <h2 style="text-align:center">Developers<h2>
+<font size=3 color="green">
+    <p id="person1"></p>
+  <script>
+var text = '{"Name":"A. V. S. Abhishek"}';
+var obj = JSON.parse(text);
+document.getElementById("person1").innerHTML ="1."+obj.Name;
+  </script>
+</font>
+<h3>We are all the VIT students 2016 batch.We are making an online shopping project which is very helpful for people to buy items online.Thank you</h3>
+ </div>
+ <div style="width:100%;height:10%;background-color:#0D304E;overflow:hidden">
+<a href="intex.html">Home</a><br>
+<a href="about2.html">About us</a><br>
+<a href="contact2.html" style="margin-top:-20%;">Contact us</a>
+
+    <p style="margin-top:-4%;text-align:center;color:white">star Textiles, Vellore - 632014, Tamil Nadu, India.</p>
+	<p style="margin-top:-1%;text-align:center;color:white">Thank you for visiting our page</p>
+
+</div>
+</body>
+</html>

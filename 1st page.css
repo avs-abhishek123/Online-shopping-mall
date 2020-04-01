@@ -1,0 +1,132 @@
+a{
+	 text-decoration:none;
+	 color:white;
+	}
+body{
+font-size:1.2vw;
+
+}
+ #sdiv{
+    display:inline-block;
+    float:left;
+ }
+ .one{
+   width:20%;
+   height:20%;
+   background-color:#0D304E;
+ }
+ .two{
+    width:60%;
+	height:20%;
+	background-color:#0D304E;
+	color:white
+ }
+ .three{
+    width:20%;
+	height:20%;
+	background-color:#0D304E;
+ }
+ .four{
+	width:20%;
+	height:80%;
+	border:2px solid #0D304E;
+ }
+ button{
+ display:inline;
+ width:40%;
+ height:25%;
+ }
+ 
+ #tfnewsearch{
+	padding:2%;
+	margin-left:10%;
+	}
+ 
+ .tftextinput{
+        width:70%;
+		padding: 2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:90%;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	
+ .tfbutton {
+		padding: 2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.2vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover{
+	border:1px solid  #aed6f1 ;
+	color:yellow;
+	}
+	#buttonstyle
+	{
+	   height:35%;
+	   border-radius:5px;
+	}
+	#sch{
+	padding: 2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.0vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	#sch:hover{
+	border:1px solid yellow;
+	}
+	#cato
+    { 
+     height:10%;
+     width:100%;
+     background:#0D304E;
+	 font-size:130%;
+     color:white;
+	 text-indent:2%;
+    }
+	.cato:hover{
+	 color:white;
+	 background-color: #5dade2 ;
+	 border:1px solid #080f21;
+	}
+	.cato{
+      height:9.6%;
+      width:100%;
+      border:1px solid #0D304E;
+      text-indent:4%;
+	  cursor:pointer;
+    }
+	a{
+	text-decoration:none;
+	}
+	.th{
+	  background-color:#3498db;
+	  width:400px;
+	  cursor:pointer;
+	}
+	.th1{
+	  background-color:#3498db;
+	  width:400px;
+	  cursor:pointer;
+	}
+	.thspan{
+	  color:white;
+	  text-shadow:2px 2px red;
+	}

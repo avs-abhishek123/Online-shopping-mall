@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>WELCOME TO ONLINE SHOPPING</title>
+<script>
+var ig,cont,t;
+function imgStart(){
+ig = new Array();
+ig[0]="slide/slide1.jpg";ig[ 1 ]="slide/slide2.jpg"; ig[ 2 ]="slide/slide3.jpg"; ig[ 3 ]="slide/slide4.jpg";ig[ 4 ]="slide/slide5.jpg";
+document.ig.src =ig[0];
+cont = 0;
+t=setInterval('imgDis()',3000);
+}
+function imgDis()
+{
+if (cont < 5)
+{
+document.ig.src = ig[ cont ];
+cont = cont + 1;
+}
+else
+cont = 0;
+}
+function imgStop()
+{
+clearInterval(t);
+}
+</script>
+<style>
+#tfnewsearch{
+	padding:2%;
+	margin-left:10%;
+	}
+ 
+ .tftextinput{
+        width:40%;
+		margin-left:5%;
+		padding: 1.2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:90%;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.2vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover{
+	border:1px solid  #aed6f1 ;
+	color:yellow;
+	}
+	#sch{
+	padding: 1.2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.0vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	#sch:hover{
+	border:1px solid yellow;
+	}
+	button:hover{
+	border:1px solid yellow;
+	}
+  button{
+   background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+   border: solid 1px #0076a3;
+   cursor:pointer;
+   color:white;
+   border-radius: 5px 5px;
+   font-size:1vw;
+   height:32.5%;
+   width:8%
+  }
+.th{
+	  width:400px;
+	  cursor:pointer;
+	  color:white;
+	  text-align:center;
+	  font-size:110%;
+	}
+	th:hover{
+	  background-color:white;
+	  color:black;
+	  text-shadow:none;
+	}
+	a{
+	 text-decoration:none;
+	 color:white;
+	}
+	a:hover{
+	   color:black;
+	}
+	#img{
+	  width:40%;
+	  height:100%;
+	  margin-left:30%;
+	}
+	#footer{
+	  font-family:cursive;
+	  font-size:95%;
+	}
+	
+</style>
+</head>
+
+<body onload="imgStart()" onunload="imgStop()">
+
+ <div style="float:left;width:25%;height:23%;background-color:brown;overflow:hidden">
+    <img src="Image/logo1.jpeg" style="height:100%;width:100%"></img>
+</div>
+    
+<div style="width:100%;height:20%;background-color:#0D304E;color:white">
+   <br>
+     <form id="tfnewsearch" method="get">
+		<input type="text"  placeholder="Search Products here" class="tftextinput" name="q" size="21" maxlength="120%"><input type="submit" id="sch" value="SEARCH" class="tfbutton">
+	 </form>
+   <a href="intex.html"> <button type="button" class="btn btn-primary" style="margin-top:-8.5%;margin-left:86%;" onClick="location.href='sign in.html'">LOG OUT</button></a>
+</div>
+<div style="100%;height:3.5%;background-color:#0D304E;color:white">
+<table>
+   <tr style="margin-left:10%">
+    <th class="th" id="d1"><a href="intex2.html">Home</a></th>
+    <th class="th" id="d2"><a href="about3.html">About us</a></th>
+    <th class="th" id="d3"><a href="1st page2.html">Purchase</a></th>
+    <th class="th" id="d4"><a href="contact3.html">Contact us</a></th>
+   </tr>
+</table>
+</div>
+<marquee style="color:brown">Enjoy Shopping with us.All in your Fingertip</marquee>
+ 
+ <div style="height:120%;width:100%;">
+  <div style="height:60%;width:100%;background-color:#98d4f3;">
+  <img name = "ig" src= "1.jpg" id="img">
+  </div>
+  <div style="height:40%;width:100%;background-color:#98d4f3;">
+  <h1 style="text-align:center;color:red;">Welcome to Magic Shopping<h1>
+  <h2 style="text-align:center;">You can buy Ladies and Gents Collections expecially Sarees with different functionalities</h2>
+  <h2 style="text-align:center;">Our Website user friendly for all.So <span style="color:red;">Enjoy Shopping with us.All in your Fingertip</span></h2>
+  <h2 style="text-align:center;">We are providing the following items.You can easily buy from us</h2>
+  <p style="font-size:125%"><b>Ladies Collections:</b>Sarees | Chudidar | T-Shirt | Kids-items </p>
+  <p style="font-size:125%"><b>Gents Collections:</b>Jeans | T-shirt | Shirt | coat suit </p>
+ </div>
+ </div>
+ <br>
+<div style="width:100%;height:10%;background-color:#0D304E;overflow:hidden">
+<a href="intex.html" id="footer">Home</a><br>
+<a href="about2.html" id="footer">About us</a><br>
+<a href="contact2.html" style="margin-top:-20%;" id="footer">Contact us</a>
+
+    <p style="margin-top:-4%;text-align:center;color:white" id="footer">Star Textiles, Vellore - 632014, Tamil Nadu, India.</p>
+	<p style="margin-top:-1%;text-align:center;color:white" id="footer">Thank you for visiting our page</p>
+
+</div>
+ </body>
+ </html>

@@ -1,0 +1,105 @@
+<html>
+<head>
+<script>  
+function validateform(){  
+var flag=0;
+var name=document.myform.name.value;  
+if (name==null || name==""){  
+  alert("Name can't be blank"); 
+  flag=1;  
+  return false; }
+  var num=document.myform.num.value;
+if (isNaN(num)){
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";
+  flag=1;
+  return false;
+}else{
+  return true;
+  }
+}
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  flag=1;
+  }  
+  	if(flag==0){
+	document.getElementById('subb').submit();
+	}
+} 
+</script>
+<title>DELIVERY ADDRESS</title>
+<style type="text/css">
+body {
+	font-family: Arial;
+	font-size: 1 vw;
+	line-height: 1 em;
+	}
+h3{
+   text-align:center;
+}
+p {
+    margin-top:4%;
+	margin-bottom: 3%;
+	}
+
+#login {
+	margin: auto;
+	width: 30%;
+	margin-top:1%;
+	}
+form fieldset input[type="text"]{
+background-color: #e5e5e5;
+border:none;
+border-radius: 3%;
+color: #5a5656;
+font-family: Arial;
+font-size:85%;
+height: 47px;
+padding: 3%;
+width: 98%;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3%;
+color: white;
+cursor: pointer;
+font-family: Arial;
+height: 50px;
+text-transform: uppercase;
+width: 98%;
+}
+
+form fieldset a {
+color: dark #5a5656;
+font-size: 100%;
+}
+form fieldset a:hover {
+ text-decoration: underline; 
+ }
+ .x1{
+color:black;
+font-size:120%;
+}
+ </style>
+</head>
+
+<body>
+    <h3 style="margin-top:3%;">DELIVERY ADDRESS</h3>
+	<div id="login">
+	<form action="http://127.0.0.1:8081/cus2.html" method="post" name="delivery_details">	
+	<fieldset>
+	<p class="x1">NAME<input type="text"  name="cname" required></p>
+	<p class="x1">ADDRESS<input type="text"  name="caddress" required></p>
+	<p class="x1">CITY<input type="text" name="ccity" required></p>	
+    <p class="x1">MOBILE NUMBER<input type="text" name="cmobileno" required></p>
+	<p class="x1">EMAIL<input type="text" name="cemail" required></p>
+	<p><input type="submit" onclick="validateform()" value="Save&Continue"></button></p>
+	</fieldset>
+		</form>
+	</div>
+</body>
+</html>

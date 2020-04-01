@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Online Payment</title>
+  <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 16px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #ddd;
+}
+
+.title {
+  padding: 35px 0 40px;
+  text-align: center;
+}
+
+.title span {
+  display: block;
+  margin: 0 0 15px;
+  font-size: 30px;
+}
+
+.payment {
+  width: 500px;
+  margin: 0 auto;
+  padding: 35px 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+[placeholder]::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+[placeholder]:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+[placeholder]::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+[placeholder]:hover::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+[placeholder]:focus::-moz-placeholder {
+  color: transparent;
+}
+
+[placeholder]:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+[placeholder]:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+[placeholder]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+label, input, button {
+  display: block;
+  width: 200px;
+  margin: 0 auto 10px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid #aaa;
+  outline: 0;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border: 0;
+  border-bottom: 3px solid #37b;
+  background: #48c;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+
+.validation.failed:after {
+  color: red;
+  content: 'Validation failed';
+}
+
+.validation.passed:after {
+  color: green;
+  content: 'Validation passed';
+}
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js'></script>
+<script src='http://stripe.github.io/jquery.payment/lib/jquery.payment.js'></script>
+
+<div class="title">
+  <span>Online Payment</span>
+  Debit card 
+</div>
+
+<div class="payment">
+
+  <form action="http://127.0.0.1:8081/cus3.html" method="post" name="payment">
+    
+    <label>Card number:</label>
+    <input type="text" name="cardno" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="•••• •••• •••• ••••" required maxlenth="19" />
+
+    <label>Expires:</label>
+    <input type="text" name="expires" class="cc-exp" pattern="\d*" x-autocompletetype="cc-exp" placeholder="MM / YYYY" required maxlength="9" />
+
+    <label>CVC:</label>
+    <input type="text" name="cvc" class="cc-cvc" pattern="\d*" x-autocompletetype="cc-csc" placeholder="123" required maxlength="5" autocomplete="off" />
+	<label class="validation"></label>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</div>
+  
+      <script src="js/index.js"></script>
+
+</body>
+</html>

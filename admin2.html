@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>A.V.S. Abhishek 16BCE0366 JSON with NodeJS</title>
+  <style>
+   #login {
+	margin: 10% auto;
+	width: 28%;
+	}
+	p{
+	  margin-left:10%;
+	}
+  </style>
+ </head>
+<body>
+<div id="login">
+    <form>
+	 <h3>A.V.S. Abhishek 16BCE0366 -Login page with NodeJS and JSON</h3>
+	 <fieldset>
+	  <p>Username:<input type="text" id="usern" onkeyup="showHint(this.value)"></p>
+	  <p>Password:<input type="password"></p>
+      <p style="margin-left:30%"><button type="button" value="submit">Login</button></p>
+     </fieldset>
+	</form>
+	<p style="margin-left:0%">Check username exists or not : <span id="checkexist"></span></p> 
+  </div>
+<script>
+ function showHint(str)
+ {
+    if (str.length == 0) 
+	{ 
+      document.getElementById("checkexist").innerHTML = "";
+      return;
+    }
+    var xmlhttp = new XMLHttpRequest();
+    var url = "Json.txt";
+	
+     xmlhttp.onreadystatechange = function() 
+	 {
+      if (this.readyState == 4 && this.status == 200) 
+	  {
+        var myArr = JSON.parse(this.responseText);
+        myFunction(myArr);
+      }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+ var f=0;
+  function myFunction(arr) 
+  {
+   
+	for(i=0;i<arr.length;i++){
+	//if(document.getElementById('usern').value==arr[i].user){
+	if(arr[i].user.startsWith(document.getElementById('usern').value))
+    {
+	document.getElementById("checkexist").innerHTML = arr[i].user+ "  exists";
+	f=1;
+	}
+	if(f==0){
+	document.getElementById("checkexist").innerHTML = "Username doesn't exist.";
+	}
+  }
+ }
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<html>
+<head>
+<title> Login Page design in html and css</title>
+<script>
+  function validate_signin()
+  {
+      var p=document.getElementById('pass').value;
+	 var pass_pat=/^[0-6]+$/;
+	if (!(pass_pat.test(x1)))
+	{
+	    alert("Enter the valid Regno.Ex:16BIT0435");
+	}
+ }
+</script>
+<style type="text/css">
+#tfnewsearch{
+	padding:2%;
+	margin-left:10%;
+	}
+ 
+ .tftextinput{
+        width:40%;
+		margin-left:5%;
+		padding: 1.2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:90%;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.2vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover{
+	border:1px solid  #aed6f1 ;
+	color:#800000;
+	}
+	#sch{
+	padding: 1.2%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:1.0vw;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3;
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	#sch:hover{
+	border:1px solid #800000;
+	}
+	button:hover{
+	border:1px solid #800000;
+	}
+	button:hover{
+	border:1px solid #800000;
+	}
+  button{
+   background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+   border: solid 1px #0076a3;
+   cursor:pointer;
+   color:white;
+   border-radius: 5px 5px;
+   font-size:1vw;
+  height:32.5%;
+   width:8%
+  }
+.th{
+	  width:400px;
+	  cursor:pointer;
+	  color:white;
+	  text-align:center;
+	  font-size:110%;
+	}
+	th:hover{
+	  background-color:white;
+	  color:black;
+	  text-shadow:none;
+	}
+	a{
+	 text-decoration:none;
+	 color:white;
+	}
+	a:hover{
+	   color:black;
+	}
+	#footer{
+	  font-family:cursive;
+	  font-size:90%;
+	}
+body {
+	background-color:#ffb6c1;
+	background-repeat:;
+	color: #0D304E;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	}
+h1{
+text-align:center;
+    font-size: 100%; 
+  }
+h1, p {
+	margin-bottom: 3%;
+	}
+strong {
+	font-weight: bold;
+	}
+.uppercase { text-transform: uppercase; }
+
+#login {
+	margin: 10% auto;
+	width: 40%;
+	}
+form fieldset input[type="text"], input[type="password"] {
+background-color:#ffffff;
+border:none;
+border-radius: 3%;
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size:100%;
+height: 50px;
+outline: none;
+padding: 3%;
+width: 98%;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3%;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 98%;
+}
+
+form fieldset a {
+color: dark #5a5656;
+font-size: 100%;
+}
+form fieldset a:hover {
+ text-decoration: underline; 
+ }
+ h1{
+  font-size:120%;
+ color:#800000;
+ font-weight:bolder;
+ background-color:#f5f5f5;
+ }
+ h1.hover{
+   background-color:#f5f5f5;
+ }
+#newu{
+color:#800000;
+background-color:#f5f5f5;
+text-decoration:none;
+text-align:center;
+}
+ </style>
+</head>
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $(".jq1").focus(function(){
+		  $(this).css("background-color","#e5e5e5");
+		});
+		 $(".jq1").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+	  });
+	</script>
+	<div style="float:left;width:25%;height:23%;background-color:brown;overflow:hidden;margin-top:-1%">
+    <img src="Image/logo1.jpeg" style="height:100%;width:100%"></img>
+</div>
+    
+<div style="width:100%;height:20%;background-color:#0D304E;color:white;margin-top:-1%">
+   <br>
+     <form id="tfnewsearch" method="get" name="searchfield">
+		<input type="text"  placeholder="Search Products here" class="tftextinput" name="q" size="21" maxlength="120%"><input type="submit" id="sch" value="SEARCH" class="tfbutton">
+	 </form>
+    <button type="button" class="btn btn-primary" style="margin-top:-7.5%;margin-left:81%;" onClick="location.href='sign in.html'">SIGN IN</button>
+	<button type="button" class="btn btn-primary" style="margin-top:-7.5%;margin-left:90%;" onClick="location.href='sign up.html'">SIGN UP</button>
+</div>
+<div style="100%;height:3.5%;background-color:#0D304E;color:white">
+<table>
+   <tr style="margin-left:10%">
+    <th class="th" id="d1"><a href="intex.html">Home</a></th>
+    <th class="th" id="d2"><a href="about2.html">About us</a></th>
+    <th class="th" id="d3"><a href="1st page.html">Purchase</a></th>
+    <th class="th" id="d4"><a href="contact2.html">Contact us</a></th>
+   </tr>
+</table>
+</div>
+	<div id="login">
+		<h1>Welcome to Stars Shopping. Please login.</h1>
+	<form action="http://127.0.0.1:8081/intex.html" method="post" name="signin">	
+	  <fieldset>
+	  <p><input type="text" name="username" required value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value=''" class="jq1"></p>
+      <p><input type="password" name="pwd" required placeholder="********" onFocus="if(this.value=='Password')this.value=''" id="pass" class="jq1"></p>
+	  <p><input type="submit" value="Login"></p>
+	  <a href="sign up.html" id="newu"><p id='newu'>Don't have Account,Just Create</p></a>
+	 </fieldset>
+    </form>
+    </div>
+<div style="width:100%;height:11%;background-color:#0D304E;overflow:hidden">
+<a href="intex.html" id="footer">Home</a><br>
+<a href="about2.html" id="footer">About us</a><br>
+<a href="contact2.html" style="margin-top:-22%;" id="footer">Contact us</a>
+
+    <p style="margin-top:-5%;text-align:center;color:white" id="footer">Stars Textiles, Vellore - 632014, Tamil Nadu, India.</p>
+	<p style="margin-top:-3%;text-align:center;color:white" id="footer">Thank you for visiting our page</p>
+
+</div>
+</body>
+</html>
